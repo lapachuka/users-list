@@ -5,16 +5,20 @@
         .module('user')
         .config(config);
 
-    config.$inject = ['$stateProvider'];
-
-    function config ($stateProvider) {
+    /*@ngInject*/
+    function config ($stateProvider, $locationProvider) {
         $stateProvider
             .state('user', {
                 url: "/{userId}",
                 templateUrl: "../public/app/modules/user/views/user.list.tpl.html",
                 controller: "userController as uCtrl"
 
-            })
+            });
+
+        $locationProvider.html5Mode({
+            enabled: true,
+            requireBase: false
+        });
     }
 
 })();

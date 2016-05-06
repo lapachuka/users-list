@@ -23,7 +23,6 @@ module.exports = function(grunt) {
                     'public/styles/**/*.scss'
                 ],
                 tasks : [
-                    'clean',
                     'sass:dev',
                     'concat:dist',
                     'html2js',
