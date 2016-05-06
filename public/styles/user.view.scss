@@ -1,0 +1,13 @@
+.user-view {
+  width: 60%;
+  min-width: 700px;
+
+  md-content{
+    padding: 10px 20px 20px 30px;
+    overflow-y: hidden;
+  }
+
+  label{
+    font-style: italic;
+  }
+}

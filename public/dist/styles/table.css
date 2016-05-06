@@ -1,0 +1,12 @@
+table.user-list {
+  width: 70%;
+  text-align: left;
+  line-height: 300%;
+  margin: 50px auto;
+}
+
+table.user-list td {
+  border-bottom: 1px solid #eeeeee;
+}
+
+/*# sourceMappingURL=table.css.map */

@@ -1,0 +1,120 @@
+<md-dialog class="user-view">
+    <md-toolbar>
+        <h2 class="md-toolbar-tools">
+            <span flex>{{uvCtrl.user.name}}</span>
+        </h2>
+    </md-toolbar>
+    <md-content flex layout-padding>
+        <h3>General information</h3>
+        <div layout="row">
+            <div layout="column" flex="15">
+                <label>Full name: </label>
+            </div>
+            <div layout="column" flex>
+                <span>{{uvCtrl.user.name}}</span>
+            </div>
+            <div layout="column" flex="15">
+                <label>Username: </label>
+            </div>
+            <div layout="column" flex>
+                <span>{{uvCtrl.user.username}}</span>
+            </div>
+        </div>
+        <div layout="row">
+            <div layout="column" flex="15">
+                <label>Email: </label>
+            </div>
+            <div layout="column" flex>
+                <span>{{uvCtrl.user.email}}</span>
+            </div>
+            <div layout="column" flex="15">
+                <label>Phone: </label>
+            </div>
+            <div layout="column" flex>
+                <span>{{uvCtrl.user.phone}}</span>
+            </div>
+        </div>
+        <div layout="row">
+            <div layout="column" flex="15">
+                <label>Website: </label>
+            </div>
+            <div layout="column" flex>
+                <span><a href="http://{{uvCtrl.user.website}}" target="_blank">{{uvCtrl.user.website}}</a></span>
+            </div>
+        </div>
+        <h3>Company</h3>
+        <div layout="row">
+            <div layout="column" flex="15">
+                <label>Company name: </label>
+            </div>
+            <div layout="column" flex>
+                <span>{{uvCtrl.user.company.name}}</span>
+            </div>
+            <div layout="column" flex="15">
+                <label>Catch Phrase: </label>
+            </div>
+            <div layout="column" flex>
+                <span>{{uvCtrl.user.company.catchPhrase}}</span>
+            </div>
+
+        </div>
+        <div layout="row">
+            <div layout="column" flex="15">
+                <label>BS: </label>
+            </div>
+            <div layout="column" flex>
+                <span>{{uvCtrl.user.company.bs}}</span>
+            </div>
+        </div>
+        <h3>Address</h3>
+        <div layout="row">
+            <div layout="column" flex="15">
+                <label>Street: </label>
+            </div>
+            <div layout="column" flex>
+                <span>{{uvCtrl.user.address.street}}</span>
+            </div>
+            <div layout="column" flex="15">
+                <label>Suite: </label>
+            </div>
+            <div layout="column" flex>
+                <span>{{uvCtrl.user.address.suite}}</span>
+            </div>
+        </div>
+        <div layout="row">
+            <div layout="column" flex="15">
+                <label>City: </label>
+            </div>
+            <div layout="column" flex>
+                <span>{{uvCtrl.user.address.city}}</span>
+            </div>
+            <div layout="column" flex="15">
+                <label>Zipcode: </label>
+            </div>
+            <div layout="column" flex>
+                <span>{{uvCtrl.user.address.zipcode}}</span>
+            </div>
+        </div>
+        <h4>Geo</h4>
+        <div layout="row">
+            <div layout="column" flex="15">
+                <label>Latitude: </label>
+            </div>
+            <div layout="column" flex>
+                <span>{{uvCtrl.user.address.geo.lat}}</span>
+            </div>
+            <div layout="column" flex="15">
+                <label>Longitude: </label>
+            </div>
+            <div layout="column" flex>
+                <span>{{uvCtrl.user.address.geo.lng}}</span>
+            </div>
+        </div>
+        <md-dialog-actions layout="row">
+            <md-button class="md-raised md-primary" layout-align="center end" ng-click="uvCtrl.close()">
+                Close
+            </md-button>
+        </md-dialog-actions>
+
+    </md-content>
+</md-dialog>

@@ -1,0 +1,25 @@
+<div layout="column">
+    <md-toolbar class="md-view">
+        <div class="md-toolbar-tools">
+            <h2 class="md-flex"><a href="/#/">Users list</a></h2>
+        </div>
+    </md-toolbar>
+    <md-content>
+        <table class="user-list">
+            <tr>
+                <th>Name</th>
+                <th>User Name</th>
+                <th>Email</th>
+                <th></th>
+
+            </tr>
+            <tr ng-repeat="user in uCtrl.users">
+                {{user}}
+                <td>{{user.name}}</td>
+                <td>{{user.username}}</td>
+                <td>{{user.email}}</td>
+                <td><a ng-click="uCtrl.showView(user)">View</a></td>
+            </tr>
+        </table>
+</md-content>
+</div>

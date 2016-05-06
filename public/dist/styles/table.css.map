@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "table.css",
+	"sources": [
+		"../../styles/table.scss"
+	],
+	"mappings": "AAAA,AAAK,KAAA,AAAA,UAAU,CAAA;EACb,KAAK,EAAE,GAAI;EACX,UAAU,EAAE,IAAK;EACjB,WAAW,EAAE,IAAK;EAClB,MAAM,EAAE,SAAU;CAOnB;;AAXD,AAOE,KAPG,AAAA,UAAU,CAOb,EAAE,CAAA;EACA,aAAa,EAAE,iBAAkB;CAClC",
+	"names": []
+}

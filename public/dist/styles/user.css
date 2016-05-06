@@ -1,0 +1,15 @@
+.user-view {
+  width: 60%;
+  min-width: 700px;
+}
+
+.user-view md-content {
+  padding: 10px 20px 20px 30px;
+  overflow-y: hidden;
+}
+
+.user-view label {
+  font-style: italic;
+}
+
+/*# sourceMappingURL=user.css.map */
